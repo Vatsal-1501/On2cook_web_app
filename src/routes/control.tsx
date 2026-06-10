@@ -4,7 +4,7 @@ import { Power, Minus, Plus, Bluetooth, Zap, Waves, Beaker, RotateCw } from "luc
 import { ble } from "@/lib/ble";
 
 export const Route = createFileRoute("/control")({
-  head: () => ({ meta: [{ title: "Control — UNIBOX" }] }),
+  head: () => ({ meta: [{ title: "Control — On2cook" }] }),
   component: Control,
 });
 
@@ -62,7 +62,7 @@ function Control() {
       <div className="flex items-center justify-between mb-8">
         <div>
           <p className="text-xs uppercase tracking-[0.4em] text-primary mb-1">Live control</p>
-          <h1 className="text-3xl md:text-5xl font-display">UniBox Pro 3000</h1>
+          <h1 className="text-3xl md:text-5xl font-display">On2cook Pro 3000</h1>
         </div>
         <span className={`flex items-center gap-2 text-xs uppercase tracking-wider px-3 py-2 border ${connected ? "border-success text-success" : "border-border text-muted-foreground"}`}>
           <Bluetooth className="w-4 h-4" /> {connected ? "Connected" : "Offline"}

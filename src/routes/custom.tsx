@@ -3,7 +3,7 @@ import { useState } from "react";
 import { ble } from "@/lib/ble";
 
 export const Route = createFileRoute("/custom")({
-  head: () => ({ meta: [{ title: "Custom — UNIBOX" }] }),
+  head: () => ({ meta: [{ title: "Custom — On2cook" }] }),
   component: Custom,
 });
 

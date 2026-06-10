@@ -23,7 +23,7 @@ export function TopNav() {
     <header className="hidden md:block sticky top-0 z-40 bg-background/85 backdrop-blur border-b border-border">
       <div className="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <span className="text-2xl font-display tracking-widest text-primary">UNIBOX</span>
+          <span className="text-2xl font-display tracking-widest text-primary">On2cook</span>
           <span className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Kitchen OS</span>
         </Link>
         <nav>

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { ble } from "@/lib/ble";
 
 export const Route = createFileRoute("/devices")({
-  head: () => ({ meta: [{ title: "Devices — UNIBOX" }] }),
+  head: () => ({ meta: [{ title: "Devices — On2cook" }] }),
   component: Devices,
 });
 
@@ -52,7 +52,7 @@ function Devices() {
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center gap-3">
               <span className={`w-2.5 h-2.5 rounded-full ${connected ? "bg-success" : "bg-muted-foreground"}`} />
-              <h3 className="text-lg">{connected ? (name ?? "UniBox Device") : "UniBox Pro 3000"}</h3>
+              <h3 className="text-lg">{connected ? (name ?? "On2cook Device") : "On2cook Pro 3000"}</h3>
             </div>
             <Bluetooth className={`w-5 h-5 ${connected ? "text-success" : "text-muted-foreground"}`} />
           </div>
@@ -81,7 +81,7 @@ function Devices() {
         <div className="bg-surface border border-border border-dashed p-6 flex flex-col items-center justify-center text-center gap-3">
           <Wifi className="w-8 h-8 text-muted-foreground" />
           <h3 className="text-lg">Add another device</h3>
-          <p className="text-sm text-muted-foreground">Scan for nearby UniBox units broadcasting over BLE.</p>
+          <p className="text-sm text-muted-foreground">Scan for nearby On2cook units broadcasting over BLE.</p>
           <button onClick={pair} disabled={busy}
             className="mt-2 border border-border px-5 py-2 uppercase tracking-wider text-xs hover:border-primary">
             Scan

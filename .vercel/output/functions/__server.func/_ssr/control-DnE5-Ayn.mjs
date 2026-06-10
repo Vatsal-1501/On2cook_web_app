@@ -84,7 +84,7 @@ function Control() {
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between mb-8", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs uppercase tracking-[0.4em] text-primary mb-1", children: "Live control" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-3xl md:text-5xl font-display", children: "UniBox Pro 3000" })
+        /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-3xl md:text-5xl font-display", children: "On2cook Pro 3000" })
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: `flex items-center gap-2 text-xs uppercase tracking-wider px-3 py-2 border ${connected ? "border-success text-success" : "border-border text-muted-foreground"}`, children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(Bluetooth, { className: "w-4 h-4" }),

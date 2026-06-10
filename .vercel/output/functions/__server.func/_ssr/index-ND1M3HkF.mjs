@@ -26,7 +26,7 @@ function Home() {
           /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
           "built for professionals."
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-6 max-w-xl text-muted-foreground text-lg", children: "Pair, monitor and command your UniBox induction & microwave system right from the browser — no app install required." }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-6 max-w-xl text-muted-foreground text-lg", children: "Pair, monitor and command your On2cook induction & microwave system right from the browser — no app install required." }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-10 flex flex-wrap gap-3", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs(Link, { to: "/devices", className: "inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 uppercase tracking-wider text-sm", children: [
             "Connect a device ",
@@ -65,7 +65,7 @@ function Home() {
           /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-12 rounded-full bg-primary/20" })
         ] }) }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-8 md:p-12", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-3xl md:text-4xl font-display", children: "UniBox Pro 3000" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-3xl md:text-4xl font-display", children: "On2cook Pro 3000" }),
           /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-2 text-primary uppercase tracking-widest text-xs", children: "Induction · Microwave · Stirrer · Pump" }),
           /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-6 text-muted-foreground", children: "All-in-one professional cooking module with 3.5kW induction, 1kW microwave magnetron, programmable stirrer and precision dosing pump." }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs(Link, { to: "/control", className: "inline-flex mt-8 items-center gap-2 bg-primary text-primary-foreground px-6 py-3 uppercase tracking-wider text-sm", children: [

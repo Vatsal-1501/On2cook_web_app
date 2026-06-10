@@ -4,7 +4,7 @@ import { ChevronRight, Cpu, Flame, Activity } from "lucide-react";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "UNIBOX — Connected Kitchen OS" },
+      { title: "On2cook — Connected Kitchen OS" },
       { name: "description", content: "Control your professional cooking device over Bluetooth from the browser." },
     ],
   }),
@@ -23,7 +23,7 @@ function Home() {
             The cooking <span className="text-primary">interface</span><br/>built for professionals.
           </h1>
           <p className="mt-6 max-w-xl text-muted-foreground text-lg">
-            Pair, monitor and command your UniBox induction & microwave system right from the browser — no app install required.
+            Pair, monitor and command your On2cook induction & microwave system right from the browser — no app install required.
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
             <Link to="/devices" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 uppercase tracking-wider text-sm">
@@ -62,7 +62,7 @@ function Home() {
             </div>
           </div>
           <div className="p-8 md:p-12">
-            <h2 className="text-3xl md:text-4xl font-display">UniBox Pro 3000</h2>
+            <h2 className="text-3xl md:text-4xl font-display">On2cook Pro 3000</h2>
             <p className="mt-2 text-primary uppercase tracking-widest text-xs">Induction · Microwave · Stirrer · Pump</p>
             <p className="mt-6 text-muted-foreground">
               All-in-one professional cooking module with 3.5kW induction, 1kW microwave magnetron, programmable stirrer and precision dosing pump.

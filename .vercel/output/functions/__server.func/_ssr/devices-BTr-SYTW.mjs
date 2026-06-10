@@ -60,7 +60,7 @@ function Devices() {
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between mb-4", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: `w-2.5 h-2.5 rounded-full ${connected ? "bg-success" : "bg-muted-foreground"}` }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg", children: connected ? name ?? "UniBox Device" : "UniBox Pro 3000" })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg", children: connected ? name ?? "On2cook Device" : "On2cook Pro 3000" })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsx(Bluetooth, { className: `w-5 h-5 ${connected ? "text-success" : "text-muted-foreground"}` })
         ] }),
@@ -73,7 +73,7 @@ function Devices() {
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-surface border border-border border-dashed p-6 flex flex-col items-center justify-center text-center gap-3", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(Wifi, { className: "w-8 h-8 text-muted-foreground" }),
         /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg", children: "Add another device" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground", children: "Scan for nearby UniBox units broadcasting over BLE." }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground", children: "Scan for nearby On2cook units broadcasting over BLE." }),
         /* @__PURE__ */ jsxRuntimeExports.jsx("button", { onClick: pair, disabled: busy, className: "mt-2 border border-border px-5 py-2 uppercase tracking-wider text-xs hover:border-primary", children: "Scan" })
       ] })
     ] })

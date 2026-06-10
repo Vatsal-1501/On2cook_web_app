@@ -1,4 +1,4 @@
-# UniBox — Deploy to Vercel
+# On2cook — Deploy to Vercel
 
 This is a **TanStack Start + React** web app for controlling BLE kitchen devices (microwave, induction, stirrer, pump). It uses the **Web Bluetooth API** for browser-to-device communication.
 

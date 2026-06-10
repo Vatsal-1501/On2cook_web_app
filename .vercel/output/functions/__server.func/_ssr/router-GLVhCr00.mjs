@@ -159,7 +159,7 @@ function TopNav() {
   }, []);
   return /* @__PURE__ */ jsxRuntimeExports.jsx("header", { className: "hidden md:block sticky top-0 z-40 bg-background/85 backdrop-blur border-b border-border", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mx-auto max-w-7xl px-6 h-16 flex items-center justify-between", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs(Link, { to: "/", className: "flex items-center gap-2", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-2xl font-display tracking-widest text-primary", children: "UNIBOX" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-2xl font-display tracking-widest text-primary", children: "On2cook" }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs uppercase tracking-[0.3em] text-muted-foreground", children: "Kitchen OS" })
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsx("nav", { children: /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { className: "flex items-center gap-1", children: navItems.map((i) => {
@@ -318,7 +318,7 @@ const $$splitComponentImporter$4 = () => import("./devices-BTr-SYTW.mjs");
 const Route$4 = createFileRoute("/devices")({
   head: () => ({
     meta: [{
-      title: "Devices — UNIBOX"
+      title: "Devices — On2cook"
     }]
   }),
   component: lazyRouteComponent($$splitComponentImporter$4, "component")
@@ -327,7 +327,7 @@ const $$splitComponentImporter$3 = () => import("./custom-feQwhCgm.mjs");
 const Route$3 = createFileRoute("/custom")({
   head: () => ({
     meta: [{
-      title: "Custom — UNIBOX"
+      title: "Custom — On2cook"
     }]
   }),
   component: lazyRouteComponent($$splitComponentImporter$3, "component")
@@ -336,7 +336,7 @@ const $$splitComponentImporter$2 = () => import("./control-DnE5-Ayn.mjs");
 const Route$2 = createFileRoute("/control")({
   head: () => ({
     meta: [{
-      title: "Control — UNIBOX"
+      title: "Control — On2cook"
     }]
   }),
   component: lazyRouteComponent($$splitComponentImporter$2, "component")
@@ -345,7 +345,7 @@ const $$splitComponentImporter$1 = () => import("./account-BYrrFWYA.mjs");
 const Route$1 = createFileRoute("/account")({
   head: () => ({
     meta: [{
-      title: "Account — UNIBOX"
+      title: "Account — On2cook"
     }]
   }),
   component: lazyRouteComponent($$splitComponentImporter$1, "component")
@@ -354,7 +354,7 @@ const $$splitComponentImporter = () => import("./index-ND1M3HkF.mjs");
 const Route = createFileRoute("/")({
   head: () => ({
     meta: [{
-      title: "UNIBOX — Connected Kitchen OS"
+      title: "On2cook — Connected Kitchen OS"
     }, {
       name: "description",
       content: "Control your professional cooking device over Bluetooth from the browser."
