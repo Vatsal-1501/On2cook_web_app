@@ -1,6 +1,6 @@
-# On2cook — Deploy to Vercel
+# On2Cook Control OS — Deploy to Vercel
 
-This is a **TanStack Start + React** web app for controlling BLE kitchen devices (microwave, induction, stirrer, pump). It uses the **Web Bluetooth API** for browser-to-device communication.
+This is a **TanStack Start + React** web app for controlling On2Cook BLE cooking devices (microwave, induction, stirrer, pump). It uses the **Web Bluetooth API** for browser-to-device communication.
 
 ---
 

@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { User } from "lucide-react";
 
 export const Route = createFileRoute("/account")({
-  head: () => ({ meta: [{ title: "Account — On2cook" }] }),
+  head: () => ({ meta: [{ title: "Account — On2Cook" }] }),
   component: Account,
 });
 

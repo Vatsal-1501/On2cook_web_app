@@ -4,12 +4,13 @@ import { Power, Minus, Plus, Bluetooth, Zap, Waves, Beaker, RotateCw } from "luc
 import { ble } from "@/lib/ble";
 
 export const Route = createFileRoute("/control")({
-  head: () => ({ meta: [{ title: "Control — On2cook" }] }),
+  head: () => ({ meta: [{ title: "Start — On2Cook" }] }),
   component: Control,
 });
 
 function Control() {
   const [connected, setConnected] = useState(false);
+  const [deviceName, setDeviceName] = useState<string | undefined>();
   const [indOn, setIndOn] = useState(false);
   const [magOn, setMagOn] = useState(false);
   const [stirOn, setStirOn] = useState(false);
@@ -21,7 +22,7 @@ function Control() {
   const logRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const u1 = ble.onState((c) => setConnected(c));
+    const u1 = ble.onState((c, n) => { setConnected(c); setDeviceName(n); });
     const u2 = ble.onMessage((msg) => {
       setLog((l) => [...l.slice(-100), `← ${msg}`]);
       const m = msg.match(/INDPOWER=(-?\d+)/); if (m) setIndPower(Number(m[1]));
@@ -62,16 +63,16 @@ function Control() {
       <div className="flex items-center justify-between mb-8">
         <div>
           <p className="text-xs uppercase tracking-[0.4em] text-primary mb-1">Live control</p>
-          <h1 className="text-3xl md:text-5xl font-display">On2cook Pro 3000</h1>
+          <h1 className="text-3xl md:text-5xl font-display">On2Cook</h1>
         </div>
         <span className={`flex items-center gap-2 text-xs uppercase tracking-wider px-3 py-2 border ${connected ? "border-success text-success" : "border-border text-muted-foreground"}`}>
-          <Bluetooth className="w-4 h-4" /> {connected ? "Connected" : "Offline"}
+          <Bluetooth className="w-4 h-4" /> {connected ? `Connected · ${deviceName ?? "On2Cook"}` : "Offline"}
         </span>
       </div>
 
       {!connected && (
         <div className="bg-surface border border-border p-4 mb-6 text-sm flex items-center justify-between">
-          <span className="text-muted-foreground">Pair a device to start sending commands.</span>
+          <span className="text-muted-foreground">Pair or reconnect an On2Cook device to start sending commands.</span>
           <button onClick={() => ble.connect().catch(()=>{})}
             className="bg-primary text-primary-foreground px-4 py-2 uppercase tracking-wider text-xs">Connect</button>
         </div>
